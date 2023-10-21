@@ -7,7 +7,7 @@ public class EasyAlgorithms {
 
 
     /**
-     * isPalindrome Algorithm
+     * Is Palindrome Algorithm
      * https://leetcode.com/problems/palindrome-number/description/
      */
     public boolean isPalindrome(int x) {
@@ -25,7 +25,7 @@ public class EasyAlgorithms {
      * Roman to Integer Problem
      * https://leetcode.com/problems/roman-to-integer/
      */
-    public int romanToInt(String s) {
+    public int romanToInt(String inputValue) {
         Map<Character, Integer> romanLang = new HashMap<>();
         romanLang.put('I', 1);
         romanLang.put('V', 5);
@@ -34,7 +34,7 @@ public class EasyAlgorithms {
         romanLang.put('C', 100);
         romanLang.put('D', 500);
         romanLang.put('M', 1000);
-        char[] chars = s.toCharArray();
+        char[] chars = inputValue.toCharArray();
         int sum = 0;
         for (int i = 0; i < chars.length; i += 1) {
             char firstChar = chars[i];
@@ -55,5 +55,12 @@ public class EasyAlgorithms {
         return sum;
     }
 
+    /**
+     * https://leetcode.com/problems/valid-parentheses/
+     * Valid Parentheses
+     */
+    public static boolean isValidParentheses(String Parentheses) {
+
+    }
 
 }
